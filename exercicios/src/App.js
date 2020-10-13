@@ -9,7 +9,7 @@ export default function App () {
         <View style={style.App}>
             {/*<Primeiro></Primeiro> */}
             {/* <Multi></Multi> */}
-            {/* <Primeiro></Primeiro> */}
+            <Primeiro></Primeiro>
         </View>
     )
 }
