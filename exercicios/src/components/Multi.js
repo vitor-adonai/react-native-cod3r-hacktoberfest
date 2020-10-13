@@ -1,16 +1,17 @@
 import React from 'react'
 import { Text } from 'react-native'
+import Estilo from './estilo'
 
 export default function Comp1() {
-    return <Text>Componente 1</Text>
+    return <Text style={Estilo.fontG}>Componente 1</Text>
 }
 
 function Comp2() {
-    return <Text>Componente 2</Text>
+    return <Text style={Estilo.fontG}>Componente 2</Text>
 }
 
 export function Comp3() {
-    return <Text>Componente 3</Text>
+    return <Text style={Estilo.fontG}>Componente 3</Text>
 }
 
 export { Comp1, Comp2 } // importando da forma com que o react-native funciona
