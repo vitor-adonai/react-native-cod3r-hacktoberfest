@@ -11,7 +11,8 @@ import { View, Text, StyleSheet } from 'react-native'
 // import Pai from './components/direta/Pai'
 // import Pai from './components/indireta/Pai'
 // import Pai from './components/indireta/Pai'
-import ContadorDois from './components/contadordois/ContadorV2'
+// import ContadorDois from './components/contadordois/ContadorV2'
+import Diferenciar from './components/Diferenciar'
 
 export default function App () {
     return (
@@ -28,7 +29,8 @@ export default function App () {
             {/* <Contador inicial={10} passo={20}></Contador> */}
             {/* <Pai></Pai> */}
             {/* <ContadorDois></ContadorDois> */}
-            <ContadorDois></ContadorDois>
+            <Diferenciar></Diferenciar>
+
         </View>
     )
 }
