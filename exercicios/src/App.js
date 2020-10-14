@@ -2,14 +2,17 @@ import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import Primeiro from './components/Primeiro'
 import Multi, { Comp1, Comp2} from './components/Multi' // importando da forma com que o react-native funciona
-import Estilo from './components/estilo'
+import MinMax from './components/MinMax'
+
 
 export default function App () {
     return (
         <View style={style.App}>
             {/*<Primeiro></Primeiro> */}
             {/* <Multi></Multi> */}
-            <Primeiro></Primeiro>
+            {/*<Primeiro></Primeiro>*/}
+            {/* {3} vai fazer o parâmetro ser enviado com number e não string */}
+            <MinMax min={3} max={20} />
         </View>
     )
 }
@@ -17,6 +20,8 @@ const style = StyleSheet.create({
     App: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        padding: 20,
+        backgroundColor: '#3dffff'
     }
 })
