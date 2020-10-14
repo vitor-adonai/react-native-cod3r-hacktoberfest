@@ -13,7 +13,12 @@ import { View, Text, StyleSheet } from 'react-native'
 // import Pai from './components/indireta/Pai'
 // import ContadorDois from './components/contadordois/ContadorV2'
 // import Diferenciar from './components/Diferenciar'
-import Condicional from './components/Condicional'
+// import Condicional from './components/Condicional'
+
+// props.children eu preciso importar o pai e filho
+import Pai from './components/relacao/Pai'
+import Filho from './components/relacao/Filho'
+
 
 
 export default function App () {
@@ -32,6 +37,7 @@ export default function App () {
             {/* <Pai></Pai> */}
             {/* <ContadorDois></ContadorDois> */}
             {/* <Diferenciar></Diferenciar> */}
+            {/* <Condicional num={1}></Condicional> */}
             {/*  */}
             {/*  */}
             {/*  */}
@@ -40,10 +46,15 @@ export default function App () {
             {/*  */}
             {/*  */}
             {/*  */}
-            {/*  */}
+            <Pai>
+                <Filho nome="Ana" sobrenome="Silva"></Filho>
+                <Filho nome="Mayara" sobrenome="Silva"></Filho>
+            </Pai>
 
-            <Condicional num={1}></Condicional>
-
+            <Pai>
+                <Filho nome="Vitor" sobrenome="Adonai"></Filho>
+                <Filho nome="João" sobrenome="Adonai"></Filho>
+            </Pai>
         </View>
     )
 }
