@@ -19,7 +19,8 @@ import { View, Text, StyleSheet } from 'react-native'
 // import Pai from './components/relacao/Pai'
 // import Filho from './components/relacao/Filho'
 // import UserLogado from './components/UserLogado'
-import ListaProdutos from './components/produtos/ListaProdutos'
+// import ListaProdutos from './components/produtos/ListaProdutos'
+import ListaProdutos2 from './components/ListaProdutos2'
 
 
 export default function App () {
@@ -51,13 +52,13 @@ export default function App () {
             </Pai>
             */}
             {/* <UserLogado usuario={{ nome: 'Vitor', email: 'vitoradonai@gmail.com' }}></UserLogado> */}
+            {/* <ListaProdutos></ListaProdutos> */}
             {/*  */}
             {/*  */}
             {/*  */}
             {/*  */}
             {/*  */}
-            {/*  */}
-            <ListaProdutos></ListaProdutos>
+            <ListaProdutos2></ListaProdutos2>
             
 
         </View>
