@@ -7,7 +7,8 @@ import { View, Text, StyleSheet } from 'react-native'
 // import PropsLeitura from './components/PropsLeitura'
 // import Fragmento from './components/Fragmento'
 //import Botao from './components/Botao'
-import Contador from './components/Contador'
+// import Contador from './components/Contador'
+import Pai from './components/direta/Pai'
 
 export default function App () {
     return (
@@ -21,7 +22,8 @@ export default function App () {
             {/* <PropsLeitura min="10"  max={100}></PropsLeitura> */}
             {/* <Fragmento></Fragmento> */}
             {/* <Botao /> */}
-            <Contador inicial={10} passo={20}></Contador>
+            {/* <Contador inicial={10} passo={20}></Contador> */}
+            <Pai></Pai>
             
         </View>
     )
