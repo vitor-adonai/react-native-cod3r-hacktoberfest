@@ -6,7 +6,8 @@ import { View, Text, StyleSheet } from 'react-native'
 // import Aleatorio from './components/Aleatorio'
 // import PropsLeitura from './components/PropsLeitura'
 // import Fragmento from './components/Fragmento'
-import Botao from './components/Botao'
+//import Botao from './components/Botao'
+import Contador from './components/Contador'
 
 export default function App () {
     return (
@@ -19,7 +20,9 @@ export default function App () {
             {/* <Aleatorio min={10}  max={100}></Aleatorio> */}
             {/* <PropsLeitura min="10"  max={100}></PropsLeitura> */}
             {/* <Fragmento></Fragmento> */}
-            <Botao />
+            {/* <Botao /> */}
+            <Contador inicial={10} passo={20}></Contador>
+            
         </View>
     )
 }
