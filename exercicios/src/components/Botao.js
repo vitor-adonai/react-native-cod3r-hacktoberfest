@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, StyleSheet } from 'react-native'
+import { Button, StyleSheet, View } from 'react-native'
 
 export default function Aleatorio(props) {
     let executar1 = function () {
@@ -13,26 +13,23 @@ export default function Aleatorio(props) {
     }
     // FORMAS DE FAZER A FUNÇÃO FUNCIONAR, NO SEGUNDO MODO A EXECUÇÃO É AUTOMÁTICA, POR ISSO TENHO QUE RETORNAR OUTRA FUNÇÃO
     return (
-        <>
-            <Button title="Executar!" onPress={executar1} style={estiloo.botao}></Button>
+        <View style={estilo.view}>
+            <Button title="Executar!" onPress={executar1} color="green"></Button>
             {/* Vai executar a função */}
-            <Button title="Executar!" onPress={executar2()} style={estiloo.botao}></Button>
+            <Button title="Executar!" onPress={executar2()} color="orange" ></Button>
             <Button title="Executar!" onPress={
                 function() {
                     console.warn('Executar 3')
-                }} style={estiloo.botao}>
+                }} color="blue">
 
             </Button>
-        </>
+        </View>
     )
     
 }
-const estiloo = StyleSheet.create({
-    botao: {
-        backgroundColor: '#000',
-        color: '#000',
-        top: -20,
-        paddingTop: 900,
-        borderRadius: 9000
+const estilo = StyleSheet.create({
+    view: {
+        backgroundColor: '#fff',
+        marginTop: -200,
     }
 })
