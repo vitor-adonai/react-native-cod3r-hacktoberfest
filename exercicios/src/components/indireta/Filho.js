@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, Text, Button } from 'react-native'
-import Estilo from '../estilo'
 export default props => {
 
     function gerarNumero(min, max) {

@@ -6,10 +6,12 @@ import { View, Text, StyleSheet } from 'react-native'
 // import Aleatorio from './components/Aleatorio'
 // import PropsLeitura from './components/PropsLeitura'
 // import Fragmento from './components/Fragmento'
-//import Botao from './components/Botao'
+// import Botao from './components/Botao'
 // import Contador from './components/Contador'
 // import Pai from './components/direta/Pai'
-import Pai from './components/indireta/Pai'
+// import Pai from './components/indireta/Pai'
+// import Pai from './components/indireta/Pai'
+import ContadorDois from './components/contadordois/ContadorV2'
 
 export default function App () {
     return (
@@ -24,8 +26,9 @@ export default function App () {
             {/* <Fragmento></Fragmento> */}
             {/* <Botao /> */}
             {/* <Contador inicial={10} passo={20}></Contador> */}
-            <Pai></Pai>
-            
+            {/* <Pai></Pai> */}
+            {/* <ContadorDois></ContadorDois> */}
+            <ContadorDois></ContadorDois>
         </View>
     )
 }
