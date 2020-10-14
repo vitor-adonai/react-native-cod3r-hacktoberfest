@@ -16,9 +16,9 @@ import { View, Text, StyleSheet } from 'react-native'
 // import Condicional from './components/Condicional'
 
 // props.children eu preciso importar o pai e filho
-import Pai from './components/relacao/Pai'
-import Filho from './components/relacao/Filho'
-
+// import Pai from './components/relacao/Pai'
+// import Filho from './components/relacao/Filho'
+import UserLogado from './components/UserLogado'
 
 
 export default function App () {
@@ -38,14 +38,7 @@ export default function App () {
             {/* <ContadorDois></ContadorDois> */}
             {/* <Diferenciar></Diferenciar> */}
             {/* <Condicional num={1}></Condicional> */}
-            {/*  */}
-            {/*  */}
-            {/*  */}
-            {/*  */}
-            {/*  */}
-            {/*  */}
-            {/*  */}
-            {/*  */}
+            {/* 
             <Pai>
                 <Filho nome="Ana" sobrenome="Silva"></Filho>
                 <Filho nome="Mayara" sobrenome="Silva"></Filho>
@@ -55,6 +48,16 @@ export default function App () {
                 <Filho nome="Vitor" sobrenome="Adonai"></Filho>
                 <Filho nome="João" sobrenome="Adonai"></Filho>
             </Pai>
+            */}
+            {/*  */}
+            {/*  */}
+            {/*  */}
+            {/*  */}
+            {/*  */}
+            {/*  */}
+            {/*  */}
+            <UserLogado usuario={{ nome: 'Vitor', email: 'vitoradonai@gmail.com' }}></UserLogado>
+
         </View>
     )
 }
