@@ -8,7 +8,8 @@ import { View, Text, StyleSheet } from 'react-native'
 // import Fragmento from './components/Fragmento'
 //import Botao from './components/Botao'
 // import Contador from './components/Contador'
-import Pai from './components/direta/Pai'
+// import Pai from './components/direta/Pai'
+import Pai from './components/indireta/Pai'
 
 export default function App () {
     return (
