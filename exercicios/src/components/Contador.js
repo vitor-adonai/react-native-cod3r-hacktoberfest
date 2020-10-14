@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 import { Text, Button, View, StyleSheet } from 'react-native'
 import Style from './estilo'
 
-export default function Contador(props) {
-
+// Usando destructuring para definir valor padrão na props
+export default function Contador({ inicial = 0, passo = 1}) { 
     // Dessa forma o increment e decrement não repercute na interface
     //let numero = props.inicial
 
 
-    const [numero, setNumero] = useState(props.inicial)
-    const inc = () => setNumero(numero + props.passo)
-    const dec = () => setNumero(numero - props.passo)
+    const [numero, setNumero] = useState(inicial)
+    const inc = () => setNumero(numero + passo)
+    const dec = () => setNumero(numero - passo)
 
     return (
        <>
