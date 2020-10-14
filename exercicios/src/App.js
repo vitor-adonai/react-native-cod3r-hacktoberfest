@@ -18,7 +18,8 @@ import { View, Text, StyleSheet } from 'react-native'
 // props.children eu preciso importar o pai e filho
 // import Pai from './components/relacao/Pai'
 // import Filho from './components/relacao/Filho'
-import UserLogado from './components/UserLogado'
+// import UserLogado from './components/UserLogado'
+import ListaProdutos from './components/produtos/ListaProdutos'
 
 
 export default function App () {
@@ -49,14 +50,15 @@ export default function App () {
                 <Filho nome="João" sobrenome="Adonai"></Filho>
             </Pai>
             */}
+            {/* <UserLogado usuario={{ nome: 'Vitor', email: 'vitoradonai@gmail.com' }}></UserLogado> */}
             {/*  */}
             {/*  */}
             {/*  */}
             {/*  */}
             {/*  */}
             {/*  */}
-            {/*  */}
-            <UserLogado usuario={{ nome: 'Vitor', email: 'vitoradonai@gmail.com' }}></UserLogado>
+            <ListaProdutos></ListaProdutos>
+            
 
         </View>
     )
